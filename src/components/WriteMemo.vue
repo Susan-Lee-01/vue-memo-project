@@ -1,7 +1,7 @@
 <script setup>
 import { ref, defineProps, defineEmits, watch } from "vue";
-import { getFormattedDate } from "@/utils/getFormattedDate";
-import { getUniqueId } from "@/utils/getUniqueId";
+import { getFormattedDate } from "@/utils/getFormattedDate.js";
+import { getUniqueId } from "@/utils/getUniqueId.js";
 
 const props = defineProps({
   memo: {
