@@ -27,7 +27,7 @@ const modifyMemo = () => {
   <div v-bind="$attrs">
     <div v-if="memo" class="eachWrap">
       <header>
-        <img src="../assets/images/title1.jpeg" class="titleImg" />
+        <img src="@/assets/images/title1.jpeg" class="titleImg" />
         <h3 class="title">{{ memo.title }}</h3>
         <button v-if="!isTrash" @click="modifyMemo" class="modifyBtn">
           수정하기
@@ -37,7 +37,7 @@ const modifyMemo = () => {
         <p class="content" v-html="formattedContent"></p>
       </main>
       <footer>
-        <img src="../assets/images/footertotoro.jpeg" class="contentImg" />
+        <img src="@/assets/images/footertotoro.jpeg" class="contentImg" />
       </footer>
     </div>
   </div>
