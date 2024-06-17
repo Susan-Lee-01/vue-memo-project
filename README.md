@@ -10,8 +10,8 @@
     <h2>✏️ Write New Memo</h2>
     <p>새 메모를 작성할 수 있습니다.</p>
     <div display="flex">
-      <img width="450px" alt="write1" src="https://github.com/Susan-Lee-01/vue-memo-project/assets/109502469/0607719a-b0e9-4703-ac53-88b501ba6cdf">
-      <img width="450px" alt="write2" src="https://github.com/Susan-Lee-01/vue-memo-project/assets/109502469/265e6a1e-0a34-4f2a-b217-ba4655366031">
+      <img width="400px" alt="write1" src="https://github.com/Susan-Lee-01/vue-memo-project/assets/109502469/0607719a-b0e9-4703-ac53-88b501ba6cdf">
+      <img width="400px" alt="write2" src="https://github.com/Susan-Lee-01/vue-memo-project/assets/109502469/265e6a1e-0a34-4f2a-b217-ba4655366031">
     </div>
   </div>
   <div>
