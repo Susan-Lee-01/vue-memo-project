@@ -1,6 +1,6 @@
 <script setup>
 import { ref, defineProps, defineEmits } from "vue";
-import { useList } from "@/components/useList";
+import { useList } from "@/components/useList.js";
 
 const props = defineProps({
   memos: Array,
