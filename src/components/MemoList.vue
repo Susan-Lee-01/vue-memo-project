@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps, defineEmits } from "vue";
-import { useList } from "@/components/useList.js";
+import { useList } from "./useList";
 
 const props = defineProps({
   memos: Array,
@@ -34,8 +34,8 @@ const deleteMemo = (id) => {
   <div>
     <div v-if="memoList.length === 0">
       <div class="emptyWrap">
-        <img src="@/assets/images/emptytotoro.jpeg" class="img first" />
-        <img src="@/assets/images/emptytotoro.jpeg" class="img second" />
+        <img src="../assets/images/emptytotoro.jpeg" class="img first" />
+        <img src="../assets/images/emptytotoro.jpeg" class="img second" />
       </div>
     </div>
     <div v-else>

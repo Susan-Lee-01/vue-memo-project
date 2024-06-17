@@ -1,7 +1,7 @@
 <script setup>
 import { ref, defineProps, defineEmits, watch } from "vue";
-import { getFormattedDate } from "@/utils/getFormattedDate.js";
-import { getUniqueId } from "@/utils/getUniqueId.js";
+import { getFormattedDate } from "../utils/getFormattedDate";
+import { getUniqueId } from "../utils/getUniqueId";
 
 const props = defineProps({
   memo: {
@@ -82,7 +82,7 @@ const handleSubmitMemo = () => {
 <template>
   <div class="writeWrap">
     <header>
-      <img src="@/assets/images/title2.jpeg" class="titleImg" />
+      <img src="../assets/images/title2.jpeg" class="titleImg" />
       <input v-model="title" class="title" placeholder="Title is here..." />
     </header>
     <main>
@@ -93,7 +93,7 @@ const handleSubmitMemo = () => {
       ></textarea>
     </main>
     <footer>
-      <img src="@/assets/images/submit.jpeg" class="submitImg" />
+      <img src="../assets/images/submit.jpeg" class="submitImg" />
       <button @click="handleSubmitMemo" class="submitBtn">submit</button>
     </footer>
   </div>

@@ -1,10 +1,10 @@
 <script setup>
 import { ref, shallowRef, nextTick } from "vue";
 
-import MemoList from "@/components/MemoList.vue";
-import TrashList from "@/components/TrashList.vue";
-import WriteMemo from "@/components/WriteMemo.vue";
-import EachMemo from "@/components/EachMemo.vue";
+import MemoList from "./components/MemoList.vue";
+import TrashList from "./components/TrashList.vue";
+import WriteMemo from "./components/WriteMemo.vue";
+import EachMemo from "./components/EachMemo.vue";
 
 const selectedMenuComponent = shallowRef(MemoList); // 사이드바 메뉴(메모, 휴지통) 선택
 const selectedMemoComponent = shallowRef(null); // 새 메모, 메모 보기
@@ -87,7 +87,7 @@ const handleUpdateMemos = (menu, updatedMemos) => {
   <div class="wrapper">
     <div class="sidebar">
       <div class="menu">
-        <img src="@/assets/images/side.jpeg" class="sideImg" />
+        <img src="./assets/images/side.jpeg" class="sideImg" />
         <div
           class="memoNav"
           :class="{ active: menuTitle === '메모' }"
@@ -128,7 +128,7 @@ const handleUpdateMemos = (menu, updatedMemos) => {
     </div>
     <!-- Writememo or Eachmemo -->
     <div v-if="selectedMemoComponent === null" class="imgContainer">
-      <img src="@/assets/images/walktotoro.jpeg" class="emptyImg" />
+      <img src="./assets/images/walktotoro.jpeg" class="emptyImg" />
     </div>
     <component
       v-else
