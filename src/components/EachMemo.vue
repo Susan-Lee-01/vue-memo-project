@@ -68,6 +68,22 @@ const modifyMemo = () => {
       padding: 0.2rem 0.8rem;
       font-size: 1.6rem;
       font-weight: bold;
+      overflow-x: auto;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0px;
+      }
+
+      &:hover::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 3px;
+      }
     }
 
     .modifyBtn {
@@ -78,7 +94,7 @@ const modifyMemo = () => {
       border-radius: 4px;
       color: #ff5675;
       background-color: #fff0f0;
-      font-size: 1rem;
+      font-size: 0.9rem;
       cursor: pointer;
       &:hover {
         color: #fff0f0;
@@ -131,5 +147,32 @@ const modifyMemo = () => {
 main:hover {
   border-radius: 6px;
   background-color: #eeeded;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .eachWrap {
+    padding: 1rem;
+
+    header {
+      margin-bottom: 0.8rem;
+
+      .title {
+        font-size: 1.2rem;
+      }
+
+      .modifyBtn {
+        width: 70px;
+        height: auto;
+      }
+    }
+
+    main {
+      margin-bottom: 0.8rem;
+
+      .content {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 </style>

@@ -86,7 +86,6 @@ const deleteMemo = (id) => {
 
 .listWrap {
   position: relative;
-  overflow-x: auto;
   display: flex;
   flex-direction: column;
 }
@@ -150,5 +149,20 @@ hr {
   margin: 0 auto;
   border: 0;
   border-top: 1px solid #e2dddd;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .memo {
+    padding: 0.6rem;
+  }
+
+  .deleteBtn {
+    width: 50px;
+  }
 }
 </style>

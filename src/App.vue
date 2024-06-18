@@ -250,4 +250,43 @@ const handleUpdateMemos = (menu, updatedMemos) => {
   opacity: 0.5;
   object-fit: cover;
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .sidebar {
+    width: 50%;
+  }
+
+  .memoNav,
+  .trashNav {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.4rem;
+    padding: 0.2rem 0 0 0;
+    font-size: 0.8rem;
+
+    h3 {
+      margin: 0.2rem 0 0 0;
+    }
+  }
+
+  .list header {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+
+    .writeIcon {
+      font-size: 0.9rem;
+    }
+  }
+
+  .memoContainer,
+  .imgContainer {
+    width: 50%;
+  }
+
+  .emptyImg {
+    width: 300px;
+    height: 300px;
+  }
+}
 </style>

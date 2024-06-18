@@ -181,4 +181,40 @@ footer {
     background-color: #ff5675;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .writeWrap {
+    padding: 1rem;
+
+    header {
+      margin-bottom: 0.8rem;
+
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+
+    main {
+      margin-bottom: 0.8rem;
+
+      .content {
+        font-size: 1rem;
+      }
+    }
+
+    footer {
+      height: 12vh;
+
+      .submitBtn {
+        width: 80px;
+        height: 25px;
+        font-size: 0.9rem;
+      }
+
+      .submitImg {
+        right: 4px;
+      }
+    }
+  }
+}
 </style>
